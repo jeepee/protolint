@@ -1,4 +1,9 @@
-module github.com/yoheimuta/protolint
+module github.com/jeepee/protolint
+
+replace (
+	github.com/yoheimuta/go-protoparser/v4 => github.com/jeepee/go-protoparser/v4 v4.0.0-20250106115106-48f8892c14a7
+	github.com/yoheimuta/protolint => .
+)
 
 require (
 	github.com/BurntSushi/toml v1.4.0
@@ -8,6 +13,7 @@ require (
 	github.com/hashicorp/go-hclog v1.6.3
 	github.com/hashicorp/go-plugin v1.6.1
 	github.com/yoheimuta/go-protoparser/v4 v4.12.0
+	github.com/yoheimuta/protolint v0.0.0-00010101000000-000000000000
 	google.golang.org/grpc v1.66.0
 	google.golang.org/protobuf v1.34.2
 	gopkg.in/yaml.v2 v2.4.0
